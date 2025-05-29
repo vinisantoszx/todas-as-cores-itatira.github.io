@@ -1,0 +1,235 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+/* DIV GERAL */
+.text-services {
+    margin-top: 20px;
+}
+
+.text-services h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.text-services h3 {
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.text-services p {
+    margin: 10px 200px;
+    text-align: justify;
+
+    line-height: 22px;
+    
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* SESSÃO DE TEXTOS */
+
+.text-section {
+    background: white;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 5px solid #7ce279;
+}
+
+.section-content {
+    margin: auto;
+    max-width: 80%;
+}
+
+.text-section h2 {
+    color: #7ce279;
+    border-bottom: 2px solid #7ce279;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 2em;
+
+    line-height: 22px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.text-section p {
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+
+    line-height: 22px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* CARROSSEL DE IMAGENS */
+
+.carousel {
+    position: relative;
+    width: 80%;
+    /* Adjust as needed */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    /* Ensures each image takes full width */
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    /* Or set a fixed height if desired */
+    object-fit: cover;
+    /* Or other object-fit values */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ .carousel-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.pagination-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.pagination-dot.active {
+    background-color: #333;
+    opacity: 1;
+}
+
+/* VÍDEO SOBRE ACMJAII */
+.bg-video {
+    width: 100%;
+    height: auto;
+
+
+    padding-top: 1px;
+    padding-bottom: 10px;
+
+    margin-bottom: 10px;
+
+    background-color: #eee;
+}
+
+.video-box {
+    width: 600px; 
+    height: 340px;
+
+    margin: 20px auto;
+    border: 2px solid #ccc;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+
+    background-color: #000;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media (max-width: 999px) {
+    .video-box {
+        width: 60%; 
+        height: 300px;
+
+        margin: 20px auto;
+        border: 2px solid #ccc;
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        overflow: hidden;
+        background-color: #000;
+    }
+}
+
+@media (max-width: 659px) {
+    .carossel {
+        height: auto;
+    }
+
+    .carossel-inner img {
+        height: 150px;
+        object-fit: fit;
+    }
+
+    .video-box {
+        width: 80%; 
+        height: 250px;
+
+        margin: 20px auto;
+        border: 2px solid #ccc;
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    .text-services h3 {
+        margin: 10px 40px;
+    }
+    .text-services p {
+        margin: 10px 40px;
+    }
+
+    .text-events h3 {
+        margin: 10px 40px;
+    }
+    .text-events p {
+        margin: 10px 40px;
+    }
+
+    .text-marks h3{
+        margin: 10px 40px;
+    }
+
+    .text-marks li{
+        margin: 10px 40px;
+    }
+}

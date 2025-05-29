@@ -1,0 +1,107 @@
+/* site desenvolvido por VINICIUS SANTOS */
+/* entre em contato por @vinisantoszx*/
+
+.text-section {
+    background: white;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 5px solid #7ce279;
+}
+
+.section-content {
+    margin: auto;
+    max-width: 80%;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.text-section h2 {
+    color: #7ce279;
+    border-bottom: 2px solid #7ce279;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 2em;
+
+    line-height: 22px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.text-section p, li{
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+
+    line-height: 24px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.carossel {
+    width: 100%;
+    height: 400px;
+    max-width: 1920px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.carossel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carossel-inner img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.carossel-control {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+
+    z-index: 1;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carossel-control.prev {
+    left: 0;
+}
+
+.carossel-control.next {
+    right: 0;
+}
+
+.carossel-indicators {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    gap: 10px;
+}
+
+.carossel-indicator {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    background-color: #fff;
+}
+
+.carossel-indicator.active {
+    background-color: #3c3c3c;
+}
