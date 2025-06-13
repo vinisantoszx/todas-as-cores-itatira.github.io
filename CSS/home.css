@@ -1,15 +1,21 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
+body {
+    background-color: #f0f7e5;
+}
+
 /* CARROSSEL - DESKTOP */
 .carossel {
     width: 100%;
-    height: 400px;
+    height: 500px;
     max-width: 1920px;
 
     position: relative;
 
     overflow: hidden;
+
+    background-color: #bbb9b9;
 }
 
 .carossel-inner {
@@ -72,6 +78,64 @@
     background-color: #3c3c3c;
 }
 
+
+/* CARROSSEL 2 */
+
+.container_novidade {
+    padding: 40px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #f0f7e5;
+}
+
+.container_novidade .carrossel-container {
+    flex-shrink: 0;
+}
+
+.container_novidade .content {
+    flex: 1;
+    padding: 0;
+}
+
+.container_novidade .content h2 {
+    margin-left: 0;
+}
+
+.container_novidade .content p {
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+
+    text-align: justify;
+}
+
+.carrossel-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 20px;
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    width: 400px; /* 2 imagens */
+    transition: transform 0.6s ease-in-out;
+}
+
+.imagens img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+}
+
 /* CARDS DE SERVIÇOS */
 .text-services {
     width: 100%;
@@ -81,7 +145,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #e0ffe0;
+    background-color: #149c68;
 }
 
 .text-services h1 {
@@ -99,7 +163,7 @@
     align-items: center;
     gap: 20px;
 
-    background-color: #e0ffe0;
+    background-color: #149c68;
 }
 
 .card {
@@ -162,7 +226,7 @@
     justify-content: center;
     align-items: center;
 
-    background-color: #ffffff;
+    background-color: #f0f7e5;
 }
 
 .text-info h1 {
@@ -244,6 +308,16 @@
     .card-info {
         height: 300px;
         width: 80%;
+    }
+
+    .container_novidade {
+        flex-direction: column; /* Empilha a imagem e o texto verticalmente */
+        text-align: center; /* Centraliza o texto quando estiver empilhado */
+        padding: 40px 20px; /* Adiciona um espaçamento nas laterais */
+    }
+
+    .container_novidade .content p {
+        text-align: center; /* Centraliza também o parágrafo */
     }
 }
 

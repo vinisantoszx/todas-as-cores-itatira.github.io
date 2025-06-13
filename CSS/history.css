@@ -1,6 +1,10 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
+body {
+    background-color: #f0f7e5;
+}
+
 /* DIV GERAL */
 .text-services {
     margin-top: 20px;
@@ -34,10 +38,9 @@
 /* SESSÃO DE TEXTOS */
 
 .text-section {
-    background: white;
+    background: #f0f7e5;
     margin: 1.5rem 0;
     padding: 1rem;
-    border-left: 5px solid #7ce279;
 }
 
 .section-content {
@@ -46,8 +49,8 @@
 }
 
 .text-section h2 {
-    color: #7ce279;
-    border-bottom: 2px solid #7ce279;
+    color: #149c68;
+    border-bottom: 2px solid #149c68;
     padding-bottom: 0.5rem;
     margin-top: 0;
     font-size: 2em;
@@ -58,6 +61,7 @@
 }
 
 .text-section p {
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.1em;
 
@@ -148,7 +152,7 @@
 
     margin-bottom: 10px;
 
-    background-color: #eee;
+    background-color: #149c68;
 }
 
 .video-box {

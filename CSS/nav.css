@@ -1,6 +1,7 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
+
 .main-menu {
     height: 20vh;
 
@@ -10,8 +11,7 @@
 
     font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 
-    background: #fff;
-    border-bottom: #7ce279 2px solid;
+    background: #f0f7e5;
 
     overflow-x: hidden;
 
@@ -29,9 +29,11 @@
 }
 
 .link-nav {
-    color: #7ce279;
+    color: #149c68;
     text-decoration: none;
     transition: 0.3s;
+
+    font-weight: bolder;
 }
 
 .link-nav:hover {
