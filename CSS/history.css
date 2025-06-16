@@ -68,6 +68,8 @@ body {
     line-height: 22px;
 
     font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+    text-align: justify;
 }
 
 /* CARROSSEL DE IMAGENS */
@@ -142,55 +144,30 @@ body {
 }
 
 /* VÍDEO SOBRE ACMJAII */
-.bg-video {
-    width: 100%;
-    height: auto;
+    .text-services {
+        background-color: #149c68;
 
-
-    padding-top: 1px;
-    padding-bottom: 10px;
-
-    margin-bottom: 10px;
-
-    background-color: #149c68;
-}
-
-.video-box {
-    width: 600px; 
-    height: 340px;
-
-    margin: 20px auto;
-    border: 2px solid #ccc;
-
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-    overflow: hidden;
-
-    background-color: #000;
-}
-
-iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-
-@media (max-width: 999px) {
-    .video-box {
-        width: 60%; 
-        height: 300px;
-
-        margin: 20px auto;
-        border: 2px solid #ccc;
-        border-radius: 10px; 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-        overflow: hidden;
-        background-color: #000;
+        padding: 10px;
     }
-}
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .instagram-wrapper {
+      width: 100%;
+      max-width: 540px;
+    }
+
+    .instagram-media {
+      width: 100% !important;
+      max-width: 540px !important;
+      margin: 0 auto !important;
+    }
 
 @media (max-width: 659px) {
     .carossel {
@@ -202,17 +179,16 @@ iframe {
         object-fit: fit;
     }
 
-    .video-box {
-        width: 80%; 
-        height: 250px;
+    .video-container {
+        padding: 10px;
+    }
 
-        margin: 20px auto;
-        border: 2px solid #ccc;
-        border-radius: 10px; 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    .instagram-wrapper {
+        max-width: 100%;
+    }
 
-        overflow: hidden;
-        background-color: #000;
+    .instagram-media {
+        max-width: 100% !important;
     }
 
     .text-services h3 {
