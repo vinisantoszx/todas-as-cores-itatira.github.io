@@ -1,44 +1,48 @@
-let currentIndex = 0;
-const intervalTime = 10000;
-const slides = document.querySelectorAll(".carossel-inner img");
-const totalSlides = slides.length;
-const indicatorsContainer = document.querySelector(".carossel-indicators");
+document.addEventListener("DOMContentLoaded", () => {
+    let currentIndex1 = 0;
+    const interval1 = 5000;
 
-function moveSlide(step) {
-    const slides = document.querySelectorAll(".carossel-inner img");
-    const totalSlides = slides.length;
+    const inner1 = document.querySelector(".carossel-inner");
+    const slides1 = inner1?.querySelectorAll("img") || [];
+    const total1 = slides1.length;
+    const indicators1 = document.querySelector(".carossel-indicators");
 
-    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
-    const offset = -currentIndex * 100;
-    document.querySelector(".carossel-inner").style.transform = `translateX(${offset}%)`;
-    updateIndicators();
-}
+    if (!inner1 || slides1.length === 0) return;
 
-function createIndicators() {
-    for (let i = 0; i < totalSlides; i++) {
-        const indicator = document.createElement("div");
-        indicator.classList.add("carossel-indicator");
-        indicator.addEventListener("click", () => {
-            moveSlide(i - currentIndex);
-        });
-        indicatorsContainer.appendChild(indicator);
+    function moveCarrossel1(step) {
+        currentIndex1 = (currentIndex1 + step + total1) % total1;
+        const offset = -currentIndex1 * 100;
+        inner1.style.transform = `translateX(${offset}%)`;
+        updateIndicators1();
     }
-    updateIndicators();
-}
 
-function updateIndicators() {
-    const indicators = document.querySelectorAll(".carossel-indicator");
-    indicators.forEach((indicator, index) => {
-        indicator.classList.toggle("active", index === currentIndex);
-    });
-}
+    function createIndicators1() {
+        if (!indicators1) return;
+        indicators1.innerHTML = "";
+        for (let i = 0; i < total1; i++) {
+            const ind = document.createElement("div");
+            ind.classList.add("carossel-indicator");
+            ind.addEventListener("click", () => {
+                moveCarrossel1(i - currentIndex1);
+            });
+            indicators1.appendChild(ind);
+        }
+        updateIndicators1();
+    }
 
-function startAutoSlide() {
-    setInterval(() => {
-        moveSlide(1);
-    }, intervalTime);
-}
+    function updateIndicators1() {
+        const all = document.querySelectorAll(".carossel-indicator");
+        all.forEach((ind, i) => {
+            ind.classList.toggle("active", i === currentIndex1);
+        });
+    }
 
-// Inicializa o carrossel
-createIndicators();
-startAutoSlide();
+    function startAuto1() {
+        setInterval(() => moveCarrossel1(1), interval1);
+    }
+
+    window.moveAutoSlide = moveCarrossel1;
+
+    createIndicators1();
+    startAuto1();
+});

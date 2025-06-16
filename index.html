@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/footer.css">
 
     <!-- FONTES E LINKS EXTERNOS -->
+    <link rel="shortcut icon" href="IMG/logo-todas.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -42,12 +43,11 @@
         <!-- CARROSEL DE IMAGENS -->
         <div class="carossel">
             <div class="carossel-inner">
-                <img src="https://via.placeholder.com/1920x400" alt="Imagem 1">
-                <img src="https://via.placeholder.com/1920x400" alt="Imagem 2">
-                <img src="https://via.placeholder.com/1920x400" alt="Imagem 3">
+                <img src="IMG/home1.png" alt="Imagem 1">
+                <img src="IMG/home2.png" alt="Imagem 2">
             </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="carossel-control prev" onclick="moveAutoSlide(-1)">&#10094;</button>
+            <button class="carossel-control next" onclick="moveAutoSlide(1)">&#10095;</button>
             <div class="carossel-indicators"></div> <!-- MARCADORES -->
         </div>
 
@@ -84,8 +84,8 @@
                     <img src="IMG/news2.jpg" alt="Imagem 2">
                 </div>
                 <div class="botoes">
-                    <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-                    <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
+                    <button class="carossel-control prev" onclick="moveManualSlide(-1)">&#10094;</button>
+                    <button class="carossel-control next" onclick="moveManualSlide(1)">&#10095;</button>
                 </div>
             </div>
 

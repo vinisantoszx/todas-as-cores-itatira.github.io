@@ -133,13 +133,13 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #bbb;
+    background-color: #fff;
     opacity: 0.7;
     cursor: pointer;
 }
 
 .pagination-dot.active {
-    background-color: #333;
+    background-color: #7ce279;
     opacity: 1;
 }
 
