@@ -170,13 +170,9 @@ body {
     }
 
 @media (max-width: 659px) {
-    .carossel {
-        height: auto;
-    }
 
-    .carossel-inner img {
-        height: 150px;
-        object-fit: fit;
+    .carousel {
+        width: 100%;
     }
 
     .video-container {

@@ -40,6 +40,17 @@ body {
     font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
+.text-section h4 {
+    color: #149c68;
+
+    padding-bottom: 0.5rem;
+    font-size: 1em;
+
+    line-height: 22px;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
 .text-section p, li{
     margin-bottom: 1rem;
     font-size: 1.1em;
