@@ -170,6 +170,9 @@ body {
     }
 
 @media (max-width: 659px) {
+    .text-section h2 {
+        line-height: 30px;
+    }
 
     .carousel {
         width: 100%;
