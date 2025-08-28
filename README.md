@@ -1,1 +1,1 @@
-# template
+# PROJETO ESCOLA DE TODAS AS CORES
